@@ -31,3 +31,23 @@ for (let i = 0; i < text.length; i++) {
 }
 
 console.log("Number of vowels:", count);
+
+
+
+// For lop inside for loop
+
+for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    console.log("i =", i, "j =", j);
+  }
+}
+
+
+
+for (let row = 1; row <= 3; row++) {
+  let line = "";
+  for (let col = 1; col <= 3; col++) {
+    line += "* ";
+  }
+  console.log(line);
+}
