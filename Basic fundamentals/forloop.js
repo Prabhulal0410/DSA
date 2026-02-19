@@ -36,18 +36,35 @@ console.log("Number of vowels:", count);
 
 // For lop inside for loop
 
-for (let i = 0; i < 3; i++) {
-  for (let j = 0; j < 3; j++) {
+// for (let i = 0; i < 3; i++) {
+//   for (let j = 0; j < 3; j++) {
+//     console.log("i =", i, "j =", j);
+//   }
+// }
+
+
+
+// for (let row = 1; row <= 3; row++) {
+//   let line = "";
+//   for (let col = 1; col <= 3; col++) {
+//     line += "* ";
+//   }
+//   console.log(line);
+// }
+
+
+// Printing Numbers Twice
+for (let i = 1; i <= 3; i++) {
+  for (let j = 1; j <= 2; j++) {
     console.log("i =", i, "j =", j);
   }
 }
 
 
+for (let i = 1; i <= 2; i++) {
+  console.log("Outer loop:", i);
 
-for (let row = 1; row <= 3; row++) {
-  let line = "";
-  for (let col = 1; col <= 3; col++) {
-    line += "* ";
+  for (let j = 1; j <= 3; j++) {
+    console.log("  Inner loop:", j);
   }
-  console.log(line);
 }
