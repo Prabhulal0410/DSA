@@ -8,14 +8,25 @@
 //   console.log(row);
 // }
 
+// right angle star pattern
+// let n = 4;
 
-// right angle star pattern 
+// for(let i = 0; i <= n; i ++){
+//   let row = ""
+//   for(let j = 0; j <=i;j++){
+//     row = row +" * "
+//   }
+//   console.log(row)
+// }
+
+
+//right angle with num
 let n = 4;
 
-for(let i = 0; i <= n; i ++){
-  let row = ""
-  for(let j = 0; j <=i;j++){
-    row = row +" * "
+for (let i = 0; i <= n; i++) {
+  let row = "";
+  for (let j = 0; j <= i; j++) {
+    row = row + (j + 1);
   }
-  console.log(row)
+  console.log(row);
 }
