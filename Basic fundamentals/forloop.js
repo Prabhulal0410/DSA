@@ -84,3 +84,20 @@ function count(n){
 let number = 213343556746;
 let result = count(number)
 console.log(result)
+
+
+// check if number is palnindrome or not
+var isPalindrome = function(n){
+    let copy = n
+    let reverseNumber = 0;
+    while(n>0){
+        rem = n % 10
+        reverseNumber = (10*reverseNumber) + rem
+        n = Math.floor(n/10);
+    }
+    if(copy === reverseNumber){
+       return true
+    }else{
+        return false
+    }
+}
