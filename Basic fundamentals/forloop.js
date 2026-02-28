@@ -101,3 +101,31 @@ var isPalindrome = function(n){
         return false
     }
 }
+
+
+// reverse integer
+var reverse = function(x) {
+    let reverseNum = 0;
+    let isNegativeNum = x < 0;
+    x = Math.abs(x); 
+
+    while (x > 0) {
+        let lastDigit = x % 10; 
+        reverseNum = reverseNum * 10 + lastDigit;
+        x = Math.floor(x / 10); 
+    }
+
+    if (isNegativeNum) {
+        reverseNum = -reverseNum; 
+    }
+
+    // Calculate the 32-bit signed integer range dynamically
+    const MIN_INT = Math.pow(2, 31) * -1; // -2^31
+    const MAX_INT = Math.pow(2, 31) - 1; // 2^31 - 1
+
+    if (reverseNum < MIN_INT || reverseNum > MAX_INT) {
+        return 0; 
+    }
+
+    return reverseNum;
+};
