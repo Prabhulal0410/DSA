@@ -80,17 +80,36 @@
 // }
 
 
+// let n = 5;
+// let toggle = 1;
+// for (let i = 0; i <= 5; i++) {
+//   let row = "";
+//   for (let j = 0; j < i + 1; j++) {
+//     row = row + toggle;
+//     if (toggle == 1) {
+//       toggle = 0;
+//     } else {
+//       toggle = 1;
+//     }
+//   }
+//   console.log(row);
+// }
+
+
 let n = 5;
-let toggle = 1;
-for (let i = 0; i <= 5; i++) {
+
+for (let i = 0; i < n; i++) {
   let row = "";
-  for (let j = 0; j < i + 1; j++) {
-    row = row + toggle;
-    if (toggle == 1) {
-      toggle = 0;
-    } else {
-      toggle = 1;
-    }
+
+  // spaces
+  for (let j = 0; j < n - (i + 1); j++) {
+    row = row + " ";
   }
+
+  // stars (left side)
+  for (let k = 0; k < (2 * i + 1); k++) {
+    row = row + "*";
+  }
+
   console.log(row);
 }
