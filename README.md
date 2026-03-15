@@ -16,8 +16,6 @@ This repo is organized by topics in DSA and may include:
   - Arrays  
   - Linked Lists  
   - Stacks & Queues  
-  - Trees & Graphs  
-  - Hash Tables / Maps  
 - 🔍 Algorithms  
   - Sorting (Bubble, Merge, Quick, …)  
   - Searching (Linear, Binary, …)  
