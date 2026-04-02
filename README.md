@@ -19,7 +19,7 @@ This repo is organized by topics in DSA and may include:
 - 🔍 Algorithms  
   - Sorting (Bubble, Merge, Quick, …)  
   - Searching (Linear, Binary, …)  
-  - Recursion / Backtracking  
+  - Recursion  
 - 💡 Problem Solutions  
   - LeetCode 
 
