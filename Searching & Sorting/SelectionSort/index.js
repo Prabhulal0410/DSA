@@ -1,3 +1,16 @@
+// 👉 Find the smallest element and put it at the beginning
+
+// Then:
+
+// Find next smallest → put in 2nd position
+// Then next → 3rd position
+
+// ⏱ Time Complexity
+// Best: O(n²)
+// Worst: O(n²)
+// 👉 (No optimization like Bubble Sort)
+
+
 function selectionSort(arr) {
   let n = arr.length;
 
