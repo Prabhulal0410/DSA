@@ -14,8 +14,6 @@ This repo is organized by topics in DSA and may include:
 - 🧱 Data Structures
   - Strings
   - Arrays  
-  - Linked Lists  
-  - Stacks & Queues  
 - 🔍 Algorithms  
   - Sorting (Bubble, Merge, Quick, …)  
   - Searching (Linear, Binary, …)  
