@@ -14,7 +14,7 @@ var numJewelsInStones = function(jewels, stones) {
 };
 
 
-//without built-in methode
+//without built-in methode  time complexcity is O(n*m)
 var numJewelsInStones = function(jewels, stones) {
     let count = 0;
     for(let i = 0; i<stones.length;i++){
@@ -23,6 +23,21 @@ var numJewelsInStones = function(jewels, stones) {
                 ++count
                 break
             }
+        }
+    }
+    return count
+};
+
+//optimize approach using set now time complexcity is O(n)
+var numJewelsInStones = function(jewels, stones) {
+    let Jset = new Set()
+    for(let i = 0; i < jewels.length;i++){
+        Jset.add(jewels[i])
+    }
+    let count = 0
+    for(let i = 0; i < stones.length;i++){
+        if(Jset.has(stones[i])){
+            count++
         }
     }
     return count
