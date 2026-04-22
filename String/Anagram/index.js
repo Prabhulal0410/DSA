@@ -1,3 +1,4 @@
+// methode 1 --> optimize code
 var isAnagram = function(s, t) {
     if(s.length !== t.length) return false
 
@@ -14,4 +15,15 @@ var isAnagram = function(s, t) {
         }
     }
     return true
+};
+
+// methode 2 --> bad code but still works
+var isAnagram = function(s, t) {
+    let str1 = s.split("").sort().join("")
+    let str2 = t.split("").sort().join("")
+    if(str1 === str2){
+        return true
+    }else{
+        return false
+    }
 };
