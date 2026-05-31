@@ -15,7 +15,7 @@ This repo is organized by topics in DSA and may include:
   - Strings
   - Arrays  
 - 🔍 Algorithms  
-  - Sorting (Bubble, Merge, insertion, …)  
+  - Sorting (Bubble, Merge, insertion, .…)  
   - Searching (Linear, Binary, …)  
   - Recursion  
 - 💡 Problem Solutions  
